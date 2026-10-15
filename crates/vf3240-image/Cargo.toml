@@ -1,0 +1,11 @@
+[package]
+name = "vf3240-image"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Corrections for the VF3240's scan output (colour registration, motor staircase, sensor chip seams), seam calibration, and image file I/O"
+
+[dependencies]
+vf3240-core = { path = "../vf3240-core" }
+flate2 = "1"

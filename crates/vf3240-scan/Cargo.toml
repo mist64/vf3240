@@ -1,0 +1,19 @@
+[package]
+name = "vf3240-scan"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "The VF3240 scan sequence with corrected rows streamed to a callback or a file, and the vf3240 command-line tool"
+
+[lib]
+name = "vf3240_scan"
+path = "src/lib.rs"
+
+[[bin]]
+name = "vf3240"
+path = "src/bin/vf3240.rs"
+
+[dependencies]
+vf3240-core = { path = "../vf3240-core" }
+vf3240-image = { path = "../vf3240-image" }

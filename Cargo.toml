@@ -1,0 +1,12 @@
+[workspace]
+members = ["crates/vf3240-core", "crates/vf3240-image", "crates/vf3240-scan"]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+rust-version = "1.75"
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+rusb = "0.9"
+thiserror = "2"
